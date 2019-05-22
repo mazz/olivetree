@@ -1,0 +1,27 @@
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-desktop">
+      <div class="column has-text-centered has-text-left-desktop">
+        <p>
+          <strong>
+            <%= raw gettext("Vitae sapien lobortis, sagittis commodo augue tempor in hendrerit ac. Enim dolor commodo nullam in.") %>
+          </strong>
+        </p>
+        <p><%= raw gettext("Ac in nunc eget aliquip taciti donec. Arcu eu mauris sociosqu venenatis, neque libero in, quisque vel ac blandit litora habitant, molestie ligula repellat ac nunc, lacus neque massa eu.") %></p>
+      </div>
+      <div class="column has-text-centered has-text-right-desktop">
+        <%= raw gettext("lobortis") %> <%= raw gettext("Vitae sapien") %> <br>
+        <%= raw gettext("dolor neque") %>
+        |
+        <%= raw gettext("aenean libero") %> <br>
+        <%= raw gettext("mauris sociosqu") %> <br>
+      </div>
+    </div>
+    <div class="content has-text-centered">
+
+      <p>
+
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,45 @@
+<script src="<%= static_path(@conn, "/js/dropzone.js")>>
+    <img src="<%= static_path(@conn, "/images/phoenix.png") %>">
+
+<script src="<%= static_path(@conn, "/js/myscript.js") %>"></script>
+
+<script src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+
+
+    # <script src="var myDropzone = new Dropzone("div#myId", { url: "/file/post"});") %>"></script>
+
+
+    <img phx-click="boom" src="<%= Routes.static_path(OlivetreeApi.Endpoint, "/images/phoenix.png") %>"">
+
+    ~L"""
+
+    <div class="filedropzone">
+
+    <div>
+    <script src="<%= Routes.static_path(OlivetreeApi.Endpoint, "/js/dropzone.js") %>"></script>
+    <link rel="stylesheet" href="<%= Routes.static_path(OlivetreeApi.Endpoint, "/css/dropzone.css") %>">
+
+    <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
+    Drag and drop files here
+    </form>
+    </div>
+  </div>
+
+
+
+    <div class="">
+      <div>
+        <div>
+          <button phx-click="github_deploy">Deploy to GitHub</button>
+        </div>
+        Status: <%= @deploy_step %>
+      </div>
+    </div>
+    """
+
+
+
+arn:aws:s3:::rvg-tracks-cdn
+
+https://s3-us-west-2.amazonaws.com/rvg-tracks-cdn/testimonies/genre_image.png
+

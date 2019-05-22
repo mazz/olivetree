@@ -1,0 +1,13 @@
+Welcome to olivetree.app!
+
+To confirm your email and gain a bonus of
++<%= @confirm_email_reputation %> reputation, click on the following link:
+
+<%= confirm_email_url(@user.email_confirmation_token) %>
+
+You can learn more about how the system works and the whys of Olivetree by
+checking the help pages at <%= help_url() %>
+
+Feel free to contact us at contact@olivetree.app
+
+See you soon on Olivetree !

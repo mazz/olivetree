@@ -1,0 +1,23 @@
+<div class="login">
+  <%= form_for @conn, Routes.login_path(@conn, :create), [as: :login], fn f -> %>
+    <div class="field">
+      <%= email_input(f, :email,
+          id: "login_email",
+          class: "input is-medium",
+          placeholder: gettext("Your e-mail"),
+          required: true) %>
+      <%= error_tag(f, :email) %>
+    </div>
+    <div class="field">
+      <%= password_input(f, :password,
+          id: "auth_password",
+          class: "input is-medium",
+          placeholder: gettext("Your password"),
+          required: true) %>
+      <%= error_tag(f, :password) %>
+    </div>
+    <div class="field">
+      <%= submit("Submit", class: "button is-primary is-medium") %>
+    </div>
+  <% end %>
+</div>

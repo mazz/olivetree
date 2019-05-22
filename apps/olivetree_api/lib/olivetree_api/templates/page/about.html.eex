@@ -1,0 +1,33 @@
+<div class="content about">
+  <h2><%= raw gettext("What is this?") %></h2>
+
+  <p><%= raw gettext("Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Sollicitudin ac orci.") %></p>
+
+  <p><%= raw gettext("Mollis aliquam ut porttitor leo. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.") %></p>
+
+  <h2><%= raw gettext("Why should I Olivetree?") %></h2>
+
+  <p><%= raw gettext("<b>Faucibus vitae aliquet nec ullamcorper</b> Fringilla ut morbi tincidunt augue interdum velit.") %></p>
+
+  <p><%= raw gettext("At volutpat diam ut venenatis tellus in. (why not start %{following_us}?), Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Nullam non nisi est sit amet facilisis: <b>eget nullam non nisi est sit amet facilisis</b>.",
+    following_us: "<a href=\"https://twitter.com/olivetree\" taget=\"_blank\">#{gettext("following us")}</a>") %></p>
+
+
+  <h2><%= raw gettext("Closing thoughts") %></h2>
+
+  <p><%= raw gettext("Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Tincidunt praesent semper feugiat nibh sed pulvinar. (you can check its %{source_code}), Enim neque volutpat ac tincidunt vitae semper quis lectus nulla.",
+    source_code: "<a href=\"https://bitbucket.org/sidha/olivetree/src/master\" target=\"_blank\">#{gettext("source code")}</a>") %></p>
+
+  <h2><%= raw gettext("Sponsors") %></h2>
+
+  <p><%= raw gettext("Venenatis urna cursus eget nunc scelerisque viverra mauris:"
+    ) %></p>
+
+  <nav class="level sponsors">
+    <div class="level-item">
+      <a href="https://appsignal.com" title="AppSignal" target="_blank">
+        <%= img_tag(Routes.static_path(@conn, "/images/sponsors/appsignal.svg"), alt: "AppSignal", width: 250) %>
+      </a>
+    </div>
+  </nav>
+</div>

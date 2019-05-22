@@ -1,0 +1,3 @@
+<h1>Show Media Item</h1>
+
+<%= @media_item.localizedname %>

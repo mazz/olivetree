@@ -1,0 +1,9 @@
+Your invitation to try Olivetree is ready !
+
+<%= unless is_nil(@invited_by) do %>
+  <%= user_appelation(@invited_by) %> invited you to join olivetree.app, a
+  platform to collaboratively fact-check content on the Internet.
+<% end %>
+
+Please follow this link to create your account:
+<%= invitation_url(@invitation_token) %>

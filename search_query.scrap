@@ -1,0 +1,16 @@
+part
+  *digest
+  full
+order
+  date
+  rating
+  relevance
+  title
+publishedAfter
+  unixtime
+mediaCat
+medium
+q
+  string
+channelUuid
+playlistUuid

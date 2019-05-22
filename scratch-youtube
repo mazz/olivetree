@@ -1,0 +1,20 @@
+alias GoogleApi.YouTube.V3.Connection, as: YouTubeConnection
+alias GoogleApi.YouTube.V3.Model.PlaylistItem, as: YouTubePlaylistVideo
+conn |> GoogleApi.YouTube.V3.Model.PlaylistItems.youtube_playlists_list("snippet", maxResults: 50, id: "UUq7BdmVpQsay5XrwOgMhN5w", key: "AIzaSyB01nsJz0y24aXMqbX34oJ9Y4ywh0koKe4")
+
+
+#playlist
+conn = GoogleApi.YouTube.V3.Connection.new()
+conn |> GoogleApi.YouTube.V3.Api.PlaylistItems.youtube_playlist_items_list("snippet", maxResults: 50, playlistId: "UUq7BdmVpQsay5XrwOgMhN5w", key: "AIzaSyB01nsJz0y24aXMqbX34oJ9Y4ywh0koKe4")
+
+#video
+conn |> GoogleApi.YouTube.V3.Api.Videos.youtube_videos_list("snippet", maxResults: 50, id: "yea9PLUMuzs", key: "AIzaSyB01nsJz0y24aXMqbX34oJ9Y4ywh0koKe4")
+
+snippet.publishedAt
+snippet.tags
+snippet.description
+
+https://www.youtube.com/watch?v=yea9PLUMuzs
+
+http://video.google.com/timedtext?lang=en&v=yea9PLUMuzs
+

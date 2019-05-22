@@ -1,0 +1,78 @@
+.offer {
+  padding-bottom: 10px;
+
+  p.title {
+    margin: 0.3em 0 0.7em 0;
+    font-size: 1.5rem;
+
+    small {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: $grey;
+    }
+  }
+
+  a {
+    color: $primary;
+  }
+}
+
+.no-offer {
+  margin: 3rem 0;
+  border: 2px solid $light;
+  border-radius: 10px;
+  padding: 3rem;
+  position: relative;
+
+  .content {
+    text-align: center;
+
+    .button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.offer-actions.level {
+  margin: 2em 0 2.5em 0;
+}
+
+.offer-share {
+  text-align: center;
+
+  .level {
+    margin-top: 1em;
+  }
+
+  .share-buttons {
+    text-align: center;
+    margin-top: 10px;
+
+    @media screen and (max-width: $tablet) {
+      span.share-button {
+        display: block;
+      }
+
+      a.button {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+  }
+
+  a.button.twitter {
+    background-color: #26c4f1;
+    color: #fff;
+  }
+
+  a.button.linkedin {
+    background-color: #007bb6;
+    color: #fff;
+  }
+
+  a.button.google {
+    background-color: #e93f2e;
+    color: #fff;
+  }
+}

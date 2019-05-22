@@ -1,0 +1,16 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+
+@import "_config";
+
+@import "~bulma/bulma.sass";
+
+@import "components/layout";
+@import "components/navbar";
+@import "components/footer";
+@import "components/hero";
+@import "components/section";
+@import "components/offer";
+@import "components/about";
+@import "components/login";

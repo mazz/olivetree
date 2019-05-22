@@ -1,0 +1,6 @@
+<%= for message <- get_flash_messages(@conn) do %>
+<div class="notification is-primary">
+  <span class="delete">&times;</span>
+  <%= raw(message) %>
+</div>
+<% end %>
